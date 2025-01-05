@@ -1,0 +1,1 @@
+This repository demonstrates a common error in Rust: data races when using raw pointers without proper synchronization. The `bug.rs` file contains code that exhibits this race condition.  The `bugSolution.rs` offers a safer solution using appropriate synchronization mechanisms or safer abstractions.
