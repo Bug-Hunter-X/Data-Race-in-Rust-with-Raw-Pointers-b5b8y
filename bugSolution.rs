@@ -1,0 +1,1 @@
+use std::sync::{Arc, Mutex};fn main() {    let v = Arc::new(Mutex::new(vec![1, 2, 3]));    {        let mut data = v.lock().unwrap();        *data.get_mut(0).unwrap() = 10;    }    println!("The first element is: {}", v.lock().unwrap()[0]);}
